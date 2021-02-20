@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sales TestCases]">
+  <test name="Sales Test Suite(failed)">
+    <classes>
+      <class name="com.agilebiz.Sales.DirectSalesScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="directSales" invocation-numbers="1 2 3 4 5 6"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.Sales.DirectSalesScripts -->
+      <class name="com.agilebiz.Sales.SalesInvoiceScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.Sales.SalesInvoiceScripts -->
+      <class name="com.agilebiz.Sales.SalesOrderScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.Sales.SalesOrderScripts -->
+      <class name="com.agilebiz.Sales.SalesDeliveryChallanScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.Sales.SalesDeliveryChallanScripts -->
+      <class name="com.agilebiz.Sales.DirectSalesReturnScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="directSalesReturn" invocation-numbers="1 2 3 4 5 6"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.Sales.DirectSalesReturnScripts -->
+      <class name="com.agilebiz.login.LoginTestScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="endTest"/>
+          <include name="LoadRepository_and_OpenBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.login.LoginTestScripts -->
+      <class name="com.agilebiz.Sales.SalesReturnScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.Sales.SalesReturnScripts -->
+    </classes>
+  </test> <!-- Sales Test Suite(failed) -->
+</suite> <!-- Failed suite [Sales TestCases] -->

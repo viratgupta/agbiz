@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GRN TestCases]">
+  <test name="GRN(failed)">
+    <classes>
+      <class name="com.agilebiz.purchase.GoodsReceiptNoteScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="GoodsReceiptNote" invocation-numbers="0"/>
+          <include name="endTest"/>
+          <include name="LoadRepository_and_OpenBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.purchase.GoodsReceiptNoteScripts -->
+      <class name="com.agilebiz.login.LoginTestScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.login.LoginTestScripts -->
+    </classes>
+  </test> <!-- GRN(failed) -->
+</suite> <!-- Failed suite [GRN TestCases] -->

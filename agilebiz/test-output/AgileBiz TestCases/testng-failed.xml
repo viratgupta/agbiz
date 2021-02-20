@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AgileBiz TestCases]">
+  <test name="Sanity Test Suite(failed)">
+    <classes>
+      <class name="com.agilebiz.purchase.GoodsReceiptNoteScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="GoodsReceiptNote" invocation-numbers="2"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.purchase.GoodsReceiptNoteScripts -->
+      <class name="com.agilebiz.purchase.PurchaseRequisitionTestScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.purchase.PurchaseRequisitionTestScripts -->
+      <class name="com.agilebiz.purchase.PurchaseOrderScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="PurchaseorderWithItemAndExpense" invocation-numbers="2"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.purchase.PurchaseOrderScripts -->
+      <class name="com.agilebiz.purchase.PurchaseBillScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="PurchaseBill" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- com.agilebiz.purchase.PurchaseBillScripts -->
+      <class name="com.agilebiz.login.LoginTestScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="endTest"/>
+          <include name="LoadRepository_and_OpenBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.login.LoginTestScripts -->
+    </classes>
+  </test> <!-- Sanity Test Suite(failed) -->
+</suite> <!-- Failed suite [AgileBiz TestCases] -->

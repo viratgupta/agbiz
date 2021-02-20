@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Purchase TestCases">
+
+	<test name="Purchase Test Suite">
+		<classes>
+			<class name="com.agilebiz.login.LoginTestScripts">
+				<methods>
+					<include name="LoginTest" />
+				</methods>
+			</class>
+
+			<!-- <class name="com.agilebiz.purchase.DirectPurchaseTestScripts , ">
+				<methods>
+					<include name="DirectPurchaseWithExpenseAndItems" />
+				</methods>
+			</class>
+
+			<class name="com.agilebiz.purchase.PurchaseRequisitionTestScripts">
+				<methods>
+					<include name="PurchaseRequisitionWithItemDetails" />
+				</methods>
+			</class> -->
+
+			<class name="com.agilebiz.purchase.PurchaseOrderScripts">
+				<methods>
+					<include name="PurchaseorderWithItemAndExpenseUsingFillGrid" />
+					<include name="PurchaseorderWithItemAndExpense" />
+				</methods>
+			</class>
+			
+			
+			<class name="com.agilebiz.purchase.GoodsReceiptNoteScripts">
+				<methods>
+					<include name="GoodsReceiptNote" />
+				</methods>
+					
+			</class>
+			
+			<class name="com.agilebiz.purchase.PurchaseBillScripts">
+				<methods>
+					<include name="PurchaseBill" />
+				</methods>
+			</class>
+
+		</classes>
+		</test>
+</suite>
+

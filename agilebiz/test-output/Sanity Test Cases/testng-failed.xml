@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sanity Test Cases]">
+  <test name="Agilebiz Test Suite(failed)">
+    <classes>
+      <class name="com.agilebiz.testScripts.SanityTestScriptSummaryTC">
+        <methods>
+          <include name="endTest"/>
+          <include name="LoadRepository_and_OpenBrowser"/>
+          <include name="SanityTestScriptTC"/>
+        </methods>
+      </class> <!-- com.agilebiz.testScripts.SanityTestScriptSummaryTC -->
+    </classes>
+  </test> <!-- Agilebiz Test Suite(failed) -->
+</suite> <!-- Failed suite [Sanity Test Cases] -->

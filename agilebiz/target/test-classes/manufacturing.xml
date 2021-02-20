@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Manufacturing TestCases">
+
+	<test name="Manufacturing Test Suite">
+		<classes>
+			<class name="com.agilebiz.login.LoginTestScripts">
+				<methods>
+					<include name="LoginTest" />
+				</methods>
+			</class>
+
+			<class name="com.agilebiz.Manufacturing.ProductionOrderScripts">
+				<methods>
+					<include name="productionOrder" />
+				</methods>
+			</class>
+
+			<class name="com.agilebiz.Manufacturing.ProductionMateriaIIssueScripts">
+				<methods>
+					<include name="productionIssueMaterial" />
+				</methods>
+			</class>
+			
+			<class name="com.agilebiz.Manufacturing.ProductionEntryScripts">
+				<methods>
+					<include name="productionEntry" />
+				</methods>
+			</class>
+			
+			<class name="com.agilebiz.Manufacturing.ProductionMaterialReturnScripts">
+				<methods>
+					<include name="productionMaterialReturn" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite>
+

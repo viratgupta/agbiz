@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sales TestCases">
+
+	<test name="Sales Test Suite">
+		<classes>
+			<class name="com.agilebiz.login.LoginTestScripts">
+				<methods>
+					<include name="LoginTest" />
+				</methods>
+			</class>
+
+			<class name="com.agilebiz.Sales.SalesOrderScripts">
+				<methods>
+					<include name="salesOrder" />
+				</methods>
+			</class>
+
+			<class name="com.agilebiz.Sales.SalesDeliveryChallanScripts">
+				<methods>
+					<include name="salesDeliveryChallan" />
+				</methods>
+			</class>
+
+			<class name="com.agilebiz.Sales.SalesInvoiceScripts">
+				<methods>
+					<include name="salesInvoice" />
+				</methods>
+			</class>
+
+			<class name="com.agilebiz.Sales.SalesReturnScripts">
+				<methods>
+					<include name="salesReturn" />
+				</methods>
+			</class>
+
+			<class name="com.agilebiz.Sales.DirectSalesScripts">
+				<methods>
+					<include name="directSales" />
+				</methods>
+			</class>
+			
+			<class name="com.agilebiz.Sales.DirectSalesReturnScripts">
+				<methods>
+					<include name="directSalesReturn" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite>
+

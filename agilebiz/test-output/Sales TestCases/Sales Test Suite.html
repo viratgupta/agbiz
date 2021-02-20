@@ -1,0 +1,765 @@
+<html>
+<head>
+<title>TestNG:  Sales Test Suite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sales Test Suite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/12/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 27 13:40:57 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>3675 seconds (3675684 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesScripts.directSales()'><b>directSales</b><br>Test class: com.agilebiz.Sales.DirectSalesScripts<br>Parameters: trans2, APPLE INC, 16/10/2020, 10 Days, Sales Executive, 100, 100, F, 809523.81, 0, 40476.19, 200, 0, 850200</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10878813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10878813'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at org.testng.Assert.assertEquals(Assert.java:315)
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>137</td>
+<td>com.agilebiz.Sales.DirectSalesScripts@1afa3c9</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesScripts.directSales()'><b>directSales</b><br>Test class: com.agilebiz.Sales.DirectSalesScripts<br>Parameters: trans3, APPLE INC, 16/10/2020, 10 Days, Sales Executive, 100, 100, T, 1619047.62, 0, 80952.38, 200, 5, 1700205</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24444864", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24444864'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at org.testng.Assert.assertEquals(Assert.java:315)
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>139</td>
+<td>com.agilebiz.Sales.DirectSalesScripts@1afa3c9</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesScripts.directSales()'><b>directSales</b><br>Test class: com.agilebiz.Sales.DirectSalesScripts<br>Parameters: trans4, APPLE INC, 16/10/2020, 10 Days, Sales Executive, 100, 0, T, 2276785.71, 0, 273214.29, 100, 12, 2550112</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28523578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace28523578'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at org.testng.Assert.assertEquals(Assert.java:315)
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>138</td>
+<td>com.agilebiz.Sales.DirectSalesScripts@1afa3c9</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesScripts.directSales()'><b>directSales</b><br>Test class: com.agilebiz.Sales.DirectSalesScripts<br>Parameters: trans5, APPLE INC, 16/10/2020, 10 Days, Sales Executive, 0, 100, T, 850000, 130000, 0, 100, 0, 720100</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22501143", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22501143'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at org.testng.Assert.assertEquals(Assert.java:315)
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>141</td>
+<td>com.agilebiz.Sales.DirectSalesScripts@1afa3c9</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesScripts.directSales()'><b>directSales</b><br>Test class: com.agilebiz.Sales.DirectSalesScripts<br>Parameters: trans6, APPLE INC, 16/10/2020, 10 Days, Sales Executive, 100, 0, F, 1700000, 80020, 0, 100, 0, 1620080</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33200275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33200275'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at org.testng.Assert.assertEquals(Assert.java:315)
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>141</td>
+<td>com.agilebiz.Sales.DirectSalesScripts@1afa3c9</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesScripts.directSales()'><b>directSales</b><br>Test class: com.agilebiz.Sales.DirectSalesScripts<br>Parameters: trans7, APPLE INC, 16/10/2020, 10 Days, Sales Executive, 0, 0, , 1700000, 90000, 0, 0, 0, 1610000</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17846025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17846025'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at org.testng.Assert.assertEquals(Assert.java:315)
+	at com.agilebiz.Sales.DirectSalesScripts.directSales(DirectSalesScripts.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>140</td>
+<td>com.agilebiz.Sales.DirectSalesScripts@1afa3c9</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn()'><b>directSalesReturn</b><br>Test class: com.agilebiz.Sales.DirectSalesReturnScripts<br>Parameters: trans2, HSR LAYOUT, APPLE INC, DSIHSR19000238, 809523.81, 0, 809523.81, 40476.19, 850000<br/>
+<a href="#Output-17739894" onClick='toggleBox("Output-17739894", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17739894" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17739894">
+No Record Found In Fillgrid<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Oops! Values cannot be validated/entered from Fillgrid expected [true] but found [false]
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17739894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17739894'><pre>java.lang.AssertionError: Oops! Values cannot be validated/entered from Fillgrid expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>22</td>
+<td>com.agilebiz.Sales.DirectSalesReturnScripts@35809</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn()'><b>directSalesReturn</b><br>Test class: com.agilebiz.Sales.DirectSalesReturnScripts<br>Parameters: trans3, HSR LAYOUT, APPLE INC, DSIHSR19000239, 809523.81, 0, 809523.81, 40476.19, 850000</td>
+<td><div><pre>java.lang.AssertionError: Values cannot be matched expected [2] but found [1]
+	at com.agilebiz.Utilities.GenericMethods.addrecordingrid(GenericMethods.java:819)
+	at com.agilebiz.Pages.Sales.DirectSalesReturn.validateandsetFillgridItem(DirectSalesReturn.java:119)
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32783777", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32783777'><pre>java.lang.AssertionError: Values cannot be matched expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.agilebiz.Utilities.GenericMethods.addrecordingrid(GenericMethods.java:819)
+	at com.agilebiz.Pages.Sales.DirectSalesReturn.validateandsetFillgridItem(DirectSalesReturn.java:119)
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>37</td>
+<td>com.agilebiz.Sales.DirectSalesReturnScripts@35809</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn()'><b>directSalesReturn</b><br>Test class: com.agilebiz.Sales.DirectSalesReturnScripts<br>Parameters: trans4, HSR LAYOUT, APPLE INC, DSIHSR19000240, 1919642.85, 0, 1919642.85, 230357.15, 2150000</td>
+<td><div><pre>java.lang.AssertionError: value cannot be matched expected [ACER LAPTOP  WHITE] but found [APPLE MOBILE JJJ]
+	at com.agilebiz.Utilities.GenericMethods.addrecordingrid(GenericMethods.java:837)
+	at com.agilebiz.Pages.Sales.DirectSalesReturn.validateandsetFillgridItem(DirectSalesReturn.java:119)
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25541476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25541476'><pre>java.lang.AssertionError: value cannot be matched expected [ACER LAPTOP  WHITE] but found [APPLE MOBILE JJJ]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.agilebiz.Utilities.GenericMethods.addrecordingrid(GenericMethods.java:837)
+	at com.agilebiz.Pages.Sales.DirectSalesReturn.validateandsetFillgridItem(DirectSalesReturn.java:119)
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>29</td>
+<td>com.agilebiz.Sales.DirectSalesReturnScripts@35809</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn()'><b>directSalesReturn</b><br>Test class: com.agilebiz.Sales.DirectSalesReturnScripts<br>Parameters: trans5, HSR LAYOUT, APPLE INC, DSIHSR19000241, 850000, 130000, 720000, 0, 720000<br/>
+<a href="#Output-8201534" onClick='toggleBox("Output-8201534", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8201534" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8201534">
+No Record Found In Fillgrid<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Oops! Values cannot be validated/entered from Fillgrid expected [true] but found [false]
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8201534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8201534'><pre>java.lang.AssertionError: Oops! Values cannot be validated/entered from Fillgrid expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>25</td>
+<td>com.agilebiz.Sales.DirectSalesReturnScripts@35809</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn()'><b>directSalesReturn</b><br>Test class: com.agilebiz.Sales.DirectSalesReturnScripts<br>Parameters: trans6, HSR LAYOUT, APPLE INC, DSIHSR19000242, 1300000, 40020, 1259980, 0, 1259980</td>
+<td><div><pre>java.lang.AssertionError: value cannot be matched expected [ACER LAPTOP  WHITE] but found [APPLE MOBILE JJJ]
+	at com.agilebiz.Utilities.GenericMethods.addrecordingrid(GenericMethods.java:837)
+	at com.agilebiz.Pages.Sales.DirectSalesReturn.validateandsetFillgridItem(DirectSalesReturn.java:119)
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10238295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10238295'><pre>java.lang.AssertionError: value cannot be matched expected [ACER LAPTOP  WHITE] but found [APPLE MOBILE JJJ]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.agilebiz.Utilities.GenericMethods.addrecordingrid(GenericMethods.java:837)
+	at com.agilebiz.Pages.Sales.DirectSalesReturn.validateandsetFillgridItem(DirectSalesReturn.java:119)
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>com.agilebiz.Sales.DirectSalesReturnScripts@35809</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn()'><b>directSalesReturn</b><br>Test class: com.agilebiz.Sales.DirectSalesReturnScripts<br>Parameters: trans7, HSR LAYOUT, APPLE INC, DSIHSR19000243, 1300000, 90000, 2060000, 0, 1210000</td>
+<td><div><pre>java.lang.AssertionError: value cannot be matched expected [ACER LAPTOP  WHITE] but found [APPLE MOBILE JJJ]
+	at com.agilebiz.Utilities.GenericMethods.addrecordingrid(GenericMethods.java:837)
+	at com.agilebiz.Pages.Sales.DirectSalesReturn.validateandsetFillgridItem(DirectSalesReturn.java:119)
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14850056", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14850056'><pre>java.lang.AssertionError: value cannot be matched expected [ACER LAPTOP  WHITE] but found [APPLE MOBILE JJJ]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.agilebiz.Utilities.GenericMethods.addrecordingrid(GenericMethods.java:837)
+	at com.agilebiz.Pages.Sales.DirectSalesReturn.validateandsetFillgridItem(DirectSalesReturn.java:119)
+	at com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn(DirectSalesReturnScripts.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>28</td>
+<td>com.agilebiz.Sales.DirectSalesReturnScripts@35809</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.agilebiz.login.LoginTestScripts.LoginTest()'><b>LoginTest</b><br>Test class: com.agilebiz.login.LoginTestScripts<br/>
+<a href="#Output-31308731" onClick='toggleBox("Output-31308731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31308731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31308731">
+Verify Home Page<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.agilebiz.login.LoginTestScripts@1901eb0</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesScripts.directSales()'><b>directSales</b><br>Test class: com.agilebiz.Sales.DirectSalesScripts<br>Parameters: trans1, APPLE INC, 16/10/2020, 10 Days, Sales Executive, 0, 0, , 850000, 0, 0, 0, 0, 850000</td>
+<td></td>
+<td>144</td>
+<td>com.agilebiz.Sales.DirectSalesScripts@1afa3c9</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.DirectSalesReturnScripts.directSalesReturn()'><b>directSalesReturn</b><br>Test class: com.agilebiz.Sales.DirectSalesReturnScripts<br>Parameters: trans1, HSR LAYOUT, APPLE INC, DSIHSR19000244, 850000, 0, 850000, 0, 850000</td>
+<td></td>
+<td>85</td>
+<td>com.agilebiz.Sales.DirectSalesReturnScripts@35809</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesDeliveryChallanScripts.salesDeliveryChallan()'><b>salesDeliveryChallan</b><br>Test class: com.agilebiz.Sales.SalesDeliveryChallanScripts<br>Parameters: trans1, HSR LAYOUT, HSR LAYOUT, APPLE INC, SOHSR19000470, 16/10/2020, 850000, 0, 0, 0, 0, 850000</td>
+<td></td>
+<td>73</td>
+<td>com.agilebiz.Sales.SalesDeliveryChallanScripts@1191845</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesDeliveryChallanScripts.salesDeliveryChallan()'><b>salesDeliveryChallan</b><br>Test class: com.agilebiz.Sales.SalesDeliveryChallanScripts<br>Parameters: trans2, HSR LAYOUT, HSR LAYOUT, APPLE INC, SOHSR19000471, 16/10/2020, 809523.81, 0, 40476.19, 200, 0, 850200</td>
+<td></td>
+<td>71</td>
+<td>com.agilebiz.Sales.SalesDeliveryChallanScripts@1191845</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesDeliveryChallanScripts.salesDeliveryChallan()'><b>salesDeliveryChallan</b><br>Test class: com.agilebiz.Sales.SalesDeliveryChallanScripts<br>Parameters: trans3, HSR LAYOUT, HSR LAYOUT, APPLE INC, SOHSR19000472, 16/10/2020, 809523.81, 0, 40476.19, 200, 5, 850205</td>
+<td></td>
+<td>71</td>
+<td>com.agilebiz.Sales.SalesDeliveryChallanScripts@1191845</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesDeliveryChallanScripts.salesDeliveryChallan()'><b>salesDeliveryChallan</b><br>Test class: com.agilebiz.Sales.SalesDeliveryChallanScripts<br>Parameters: trans4, HSR LAYOUT, HSR LAYOUT, APPLE INC, SOHSR19000473, 16/10/2020, 1919642.85, 0, 230357.15, 100, 12, 2150112</td>
+<td></td>
+<td>71</td>
+<td>com.agilebiz.Sales.SalesDeliveryChallanScripts@1191845</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesDeliveryChallanScripts.salesDeliveryChallan()'><b>salesDeliveryChallan</b><br>Test class: com.agilebiz.Sales.SalesDeliveryChallanScripts<br>Parameters: trans5, HSR LAYOUT, HSR LAYOUT, APPLE INC, SOHSR19000474, 16/10/2020, 850000, 130000, 0, 100, 0, 720100</td>
+<td></td>
+<td>71</td>
+<td>com.agilebiz.Sales.SalesDeliveryChallanScripts@1191845</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesDeliveryChallanScripts.salesDeliveryChallan()'><b>salesDeliveryChallan</b><br>Test class: com.agilebiz.Sales.SalesDeliveryChallanScripts<br>Parameters: trans6, HSR LAYOUT, HSR LAYOUT, APPLE INC, SOHSR19000475, 16/10/2020, 1300000, 40020, 0, 100, 0, 1260080</td>
+<td></td>
+<td>71</td>
+<td>com.agilebiz.Sales.SalesDeliveryChallanScripts@1191845</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesDeliveryChallanScripts.salesDeliveryChallan()'><b>salesDeliveryChallan</b><br>Test class: com.agilebiz.Sales.SalesDeliveryChallanScripts<br>Parameters: trans7, HSR LAYOUT, HSR LAYOUT, APPLE INC, SOHSR19000476, 16/10/2020, 1300000, 90000, 0, 0, 0, 1210000</td>
+<td></td>
+<td>71</td>
+<td>com.agilebiz.Sales.SalesDeliveryChallanScripts@1191845</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesInvoiceScripts.salesInvoice()'><b>salesInvoice</b><br>Test class: com.agilebiz.Sales.SalesInvoiceScripts<br>Parameters: trans1, HSR LAYOUT, APPLE INC, SOHSR19000470, 16/10/2020, 30 Days, DSHSR19000309, 850000, 0, 0, 0, 0, 850000</td>
+<td></td>
+<td>33</td>
+<td>com.agilebiz.Sales.SalesInvoiceScripts@1049ea1</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesInvoiceScripts.salesInvoice()'><b>salesInvoice</b><br>Test class: com.agilebiz.Sales.SalesInvoiceScripts<br>Parameters: trans2, HSR LAYOUT, APPLE INC, SOHSR19000471, 16/10/2020, 30 Days, DSHSR19000310, 809523.81, 0, 40476.19, 200, 0, 850200</td>
+<td></td>
+<td>31</td>
+<td>com.agilebiz.Sales.SalesInvoiceScripts@1049ea1</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesInvoiceScripts.salesInvoice()'><b>salesInvoice</b><br>Test class: com.agilebiz.Sales.SalesInvoiceScripts<br>Parameters: trans3, HSR LAYOUT, APPLE INC, SOHSR19000472, 16/10/2020, 30 Days, DSHSR19000311, 809523.81, 0, 40476.19, 200, 5, 850205</td>
+<td></td>
+<td>30</td>
+<td>com.agilebiz.Sales.SalesInvoiceScripts@1049ea1</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesInvoiceScripts.salesInvoice()'><b>salesInvoice</b><br>Test class: com.agilebiz.Sales.SalesInvoiceScripts<br>Parameters: trans4, HSR LAYOUT, APPLE INC, SOHSR19000473, 16/10/2020, 30 Days, DSHSR19000312, 1919642.85, 0, 230357.15, 100, 12, 2150112</td>
+<td></td>
+<td>31</td>
+<td>com.agilebiz.Sales.SalesInvoiceScripts@1049ea1</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesInvoiceScripts.salesInvoice()'><b>salesInvoice</b><br>Test class: com.agilebiz.Sales.SalesInvoiceScripts<br>Parameters: trans5, HSR LAYOUT, APPLE INC, SOHSR19000474, 16/10/2020, 30 Days, DSHSR19000313, 850000, 130000, 0, 100, 0, 720100</td>
+<td></td>
+<td>31</td>
+<td>com.agilebiz.Sales.SalesInvoiceScripts@1049ea1</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesInvoiceScripts.salesInvoice()'><b>salesInvoice</b><br>Test class: com.agilebiz.Sales.SalesInvoiceScripts<br>Parameters: trans6, HSR LAYOUT, APPLE INC, SOHSR19000475, 16/10/2020, 30 Days, DSHSR19000314, 1300000, 40020, 0, 100, 0, 1260080</td>
+<td></td>
+<td>31</td>
+<td>com.agilebiz.Sales.SalesInvoiceScripts@1049ea1</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesInvoiceScripts.salesInvoice()'><b>salesInvoice</b><br>Test class: com.agilebiz.Sales.SalesInvoiceScripts<br>Parameters: trans7, HSR LAYOUT, APPLE INC, SOHSR19000476, 16/10/2020, 30 Days, DSHSR19000315, 1300000, 90000, 0, 0, 0, 1210000</td>
+<td></td>
+<td>30</td>
+<td>com.agilebiz.Sales.SalesInvoiceScripts@1049ea1</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesOrderScripts.salesOrder()'><b>salesOrder</b><br>Test class: com.agilebiz.Sales.SalesOrderScripts<br>Parameters: trans1, 16/10/2020, APPLE INC, 10 Days, Sales Executive, 0, 0, , 850000, 0, 0, 0, 0, 850000</td>
+<td></td>
+<td>159</td>
+<td>com.agilebiz.Sales.SalesOrderScripts@1a987b8</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesOrderScripts.salesOrder()'><b>salesOrder</b><br>Test class: com.agilebiz.Sales.SalesOrderScripts<br>Parameters: trans2, 16/10/2020, APPLE INC, 10 Days, Sales Executive, 100, 100, F, 809523.81, 0, 40476.19, 200, 0, 850200</td>
+<td></td>
+<td>151</td>
+<td>com.agilebiz.Sales.SalesOrderScripts@1a987b8</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesOrderScripts.salesOrder()'><b>salesOrder</b><br>Test class: com.agilebiz.Sales.SalesOrderScripts<br>Parameters: trans3, 16/10/2020, APPLE INC, 10 Days, Sales Executive, 100, 100, T, 1619047.62, 0, 80952.38, 200, 5, 1700205</td>
+<td></td>
+<td>152</td>
+<td>com.agilebiz.Sales.SalesOrderScripts@1a987b8</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesOrderScripts.salesOrder()'><b>salesOrder</b><br>Test class: com.agilebiz.Sales.SalesOrderScripts<br>Parameters: trans4, 16/10/2020, APPLE INC, 10 Days, Sales Executive, 100, 0, T, 2276785.71, 0, 273214.29, 100, 12, 2550112</td>
+<td></td>
+<td>151</td>
+<td>com.agilebiz.Sales.SalesOrderScripts@1a987b8</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesOrderScripts.salesOrder()'><b>salesOrder</b><br>Test class: com.agilebiz.Sales.SalesOrderScripts<br>Parameters: trans5, 16/10/2020, APPLE INC, 10 Days, Sales Executive, 0, 100, T, 850000, 130000, 0, 100, 0, 720100</td>
+<td></td>
+<td>157</td>
+<td>com.agilebiz.Sales.SalesOrderScripts@1a987b8</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesOrderScripts.salesOrder()'><b>salesOrder</b><br>Test class: com.agilebiz.Sales.SalesOrderScripts<br>Parameters: trans6, 16/10/2020, APPLE INC, 10 Days, Sales Executive, 100, 0, F, 1700000, 80020, 0, 100, 0, 1620080</td>
+<td></td>
+<td>157</td>
+<td>com.agilebiz.Sales.SalesOrderScripts@1a987b8</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesOrderScripts.salesOrder()'><b>salesOrder</b><br>Test class: com.agilebiz.Sales.SalesOrderScripts<br>Parameters: trans7, 16/10/2020, APPLE INC, 10 Days, Sales Executive, 0, 0, , 1700000, 90000, 0, 0, 0, 1610000</td>
+<td></td>
+<td>154</td>
+<td>com.agilebiz.Sales.SalesOrderScripts@1a987b8</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesReturnScripts.salesReturn()'><b>salesReturn</b><br>Test class: com.agilebiz.Sales.SalesReturnScripts<br>Parameters: trans1, HSR LAYOUT, APPLE INC, SIHSR19000181, 850000, 0, 850000, 0, 850000</td>
+<td></td>
+<td>89</td>
+<td>com.agilebiz.Sales.SalesReturnScripts@cc7e6f</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesReturnScripts.salesReturn()'><b>salesReturn</b><br>Test class: com.agilebiz.Sales.SalesReturnScripts<br>Parameters: trans2, HSR LAYOUT, APPLE INC, SIHSR19000182, 809523.81, 0, 809523.81, 40476.19, 850000</td>
+<td></td>
+<td>87</td>
+<td>com.agilebiz.Sales.SalesReturnScripts@cc7e6f</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesReturnScripts.salesReturn()'><b>salesReturn</b><br>Test class: com.agilebiz.Sales.SalesReturnScripts<br>Parameters: trans3, HSR LAYOUT, APPLE INC, SIHSR19000183, 809523.81, 0, 809523.81, 40476.19, 850000</td>
+<td></td>
+<td>87</td>
+<td>com.agilebiz.Sales.SalesReturnScripts@cc7e6f</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesReturnScripts.salesReturn()'><b>salesReturn</b><br>Test class: com.agilebiz.Sales.SalesReturnScripts<br>Parameters: trans4, HSR LAYOUT, APPLE INC, SIHSR19000184, 1919642.85, 0, 1919642.85, 230357.15, 2150000</td>
+<td></td>
+<td>87</td>
+<td>com.agilebiz.Sales.SalesReturnScripts@cc7e6f</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesReturnScripts.salesReturn()'><b>salesReturn</b><br>Test class: com.agilebiz.Sales.SalesReturnScripts<br>Parameters: trans5, HSR LAYOUT, APPLE INC, SIHSR19000185, 850000, 130000, 720000, 0, 720000</td>
+<td></td>
+<td>87</td>
+<td>com.agilebiz.Sales.SalesReturnScripts@cc7e6f</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesReturnScripts.salesReturn()'><b>salesReturn</b><br>Test class: com.agilebiz.Sales.SalesReturnScripts<br>Parameters: trans6, HSR LAYOUT, APPLE INC, SIHSR19000186, 1300000, 40020, 1259980, 0, 1259980</td>
+<td></td>
+<td>87</td>
+<td>com.agilebiz.Sales.SalesReturnScripts@cc7e6f</td></tr>
+<tr>
+<td title='com.agilebiz.Sales.SalesReturnScripts.salesReturn()'><b>salesReturn</b><br>Test class: com.agilebiz.Sales.SalesReturnScripts<br>Parameters: trans7, HSR LAYOUT, APPLE INC, SIHSR19000187, 1300000, 90000, 2060000, 0, 1210000</td>
+<td></td>
+<td>87</td>
+<td>com.agilebiz.Sales.SalesReturnScripts@cc7e6f</td></tr>
+</table><p>
+</body>
+</html>

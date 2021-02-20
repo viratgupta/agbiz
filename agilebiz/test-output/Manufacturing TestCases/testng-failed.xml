@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Manufacturing TestCases]">
+  <test name="Manufacturing Test Suite(failed)">
+    <classes>
+      <class name="com.agilebiz.Manufacturing.ProductionOrderScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.Manufacturing.ProductionOrderScripts -->
+      <class name="com.agilebiz.Manufacturing.ProductionMateriaIIssueScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="productionIssueMaterial" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.agilebiz.Manufacturing.ProductionMateriaIIssueScripts -->
+      <class name="com.agilebiz.login.LoginTestScripts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="endTest"/>
+          <include name="LoadRepository_and_OpenBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.agilebiz.login.LoginTestScripts -->
+    </classes>
+  </test> <!-- Manufacturing Test Suite(failed) -->
+</suite> <!-- Failed suite [Manufacturing TestCases] -->
